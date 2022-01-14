@@ -50,18 +50,18 @@ function setup() {
   id = resources["images/treasureHunter.json"].textures;
 
   //Dungeon
-  dungeon = new Sprite(id["dungeon.png"]);
+  dungeon = new Sprite(id["cute-office2.png"]);
   gameScene.addChild(dungeon);
 
   //Door
-  door = new Sprite(id["door.png"]);
-  door.position.set(32, 0);
-  gameScene.addChild(door);
+  //   door = new Sprite(id["door.png"]);
+  //   door.position.set(32, 0);
+  //   gameScene.addChild(door);
 
   //Explorer
   explorer = new Sprite(id["explorer.png"]);
-  explorer.x = 68;
-  explorer.y = gameScene.height / 2 - explorer.height / 2;
+  explorer.x = 195;
+  explorer.y = 365;
   explorer.vx = 0;
   explorer.vy = 0;
   gameScene.addChild(explorer);
@@ -167,6 +167,7 @@ function play(delta) {
 
   //Contain the explorer inside the area of the dungeon
   contain(explorer, { x: 28, y: 10, width: 488, height: 480 });
+  //   contain(explorer, { x: 300, y: 100, width: 10, height: 10 });
   //contain(explorer, stage);
 
   //Set `explorerHit` to `false` before checking for a collision
