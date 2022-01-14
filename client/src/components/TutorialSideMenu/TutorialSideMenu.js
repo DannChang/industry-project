@@ -12,7 +12,7 @@ class TutorialSideMenu extends Component {
       <div>
         <>
           <section className="side-menu">
-            <div>
+            <div className="side-menu__container">
               <Link to="/">
                 <img className="side-menu__logo" src={Logo} alt="Logo" />
               </Link>
