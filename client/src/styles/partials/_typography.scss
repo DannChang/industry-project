@@ -1,0 +1,86 @@
+@use "./variables" as *;
+/// --- TYPOGRAPHY.SCSS --- ///
+@use "../partials/mixins" as *;
+// FONTS //
+@font-face {
+	font-family: "Titillium Web";
+	src: url("../../assets/fonts/TitilliumWeb-SemiBold.woff2") format("woff2"),
+		url("../../assets/fonts/TitilliumWeb-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Titillium Web";
+	src: url("../../assets/fonts/TitilliumWeb-Regular.woff2") format("woff2"),
+		url("../../assets/fonts/TitilliumWeb-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+// TYPOGRAPHY STYLING //
+
+@mixin page-header {
+	font-size: 28px;
+	line-height: 36px;
+	@include tablet {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+@mixin subheader {
+	font-size: 20px;
+	line-height: 28px;
+	@include tablet {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+@mixin label-link-button-copy {
+	font-size: 13px;
+	line-height: 20px;
+	@include tablet {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@mixin table-header {
+	font-size: 11px;
+	line-height: 16px;
+	@include tablet {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+@mixin body-copy-large {
+	font-size: 15px;
+	line-height: 26px;
+	@include tablet {
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+
+@mixin body-copy-medium {
+	font-size: 13px;
+	line-height: 20px;
+	@include tablet {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@mixin body-copy-small {
+	font-size: 11px;
+	line-height: 16px;
+	@include tablet {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
