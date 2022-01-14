@@ -1,0 +1,38 @@
+[
+  {
+    "headerText": "Hello James! Let’s get started.",
+    "upperText": "Welcome to your virtual workplace! Onboarding doesn’t have to be boring - here you will be able to interact with other new hires as you complete onboarding minigames to help you learn more about the company and your role.",
+    "lowerText": "",
+    "prevLink": "",
+    "nextLink": "moving-around"
+  },
+  {
+    "headerText": "Let's try moving around.",
+    "upperText": "Click on a spot that you want to walk to, or use the arrow keys to move around. Explore the workplace to complete your onboarding.",
+    "lowerText": "Try walking to the glowing tile!",
+    "prevLink": "starter",
+    "nextLink": "interact-with-others"
+  },
+
+  {
+    "headerText": "Great!",
+    "upperText": "Let’s try interacting with your",
+    "lowerText": "Walk closer to an avatar if you want to talk to a coworker. You will get the option to turn on your video camera.",
+    "prevLink": "moving-around",
+    "nextLink": "play-mini-games"
+  },
+  {
+    "headerText": "Awesome!",
+    "upperText": "Now it’s time for the fun part: games!",
+    "lowerText": "Walk towards a station to join a game. After learning the rules, you can go through your modules by playing the games. Start the game by clicking the start button when you’re ready. ",
+    "prevLink": "interact-with-others",
+    "nextLink": "workplace-culture"
+  },
+  {
+    "headerText": "You've learned the basics!",
+    "upperText": "Great! You just finished learning the basics. Continue exploring the office space to complete the onboarding mini games. ",
+    "lowerText": "You can click on the ? to get help anytime as you navigate Scope.",
+    "prevLink": "play-mini-games",
+    "nextLink": ""
+  }
+]

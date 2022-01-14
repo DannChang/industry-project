@@ -1,0 +1,118 @@
+@use "../../styles/partials/colors" as *;
+
+.modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__help {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &--starter {
+    background-image: url("../../assets/images/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw - 22rem) 100vh;
+  }
+  &--moving-around {
+    background-image: url("../../assets/images/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw - 22rem) 100vh;
+  }
+  &--interact-with-others {
+    background-image: url("../../assets/images/bg-3.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw - 22rem) 100vh;
+  }
+  &--play-mini-games {
+    background-image: url("../../assets/images/bg-4.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw - 22rem) 100vh;
+  }
+  &--workplace-culture {
+    background-image: url("../../assets/images/bg-5.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw - 22rem) 100vh;
+  }
+
+  &__card {
+    position: absolute;
+    top: 3.375rem;
+    left: 3.375rem;
+    width: 37.5rem;
+    border: 0.3125rem solid $global-blue;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    background-color: $global-black;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    color: $global-white;
+    margin-bottom: 1.4375rem;
+  }
+  &__avatar {
+    width: 4.9375rem;
+    height: 4.9375rem;
+    margin-right: 1.4375rem;
+  }
+  &__header-text {
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    color: $global-white;
+    font-size: 1.25rem;
+    line-height: 1.78125rem;
+  }
+  &__upper-text {
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    color: $global-white;
+  }
+  &__upper-text {
+    margin-bottom: 1.5rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__left-arrow {
+    margin-right: 1.625rem;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &--unavailable {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+  &__right-arrow {
+    margin-right: 1.625rem;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &--unavailable {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+  &__skip {
+    color: $global-white;
+  }
+}
