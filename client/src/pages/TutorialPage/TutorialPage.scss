@@ -1,13 +1,14 @@
 .tutorial {
-    display: flex;
-    &__side-menu {
-        width: 20%;
-        min-width: 15rem;
-        height: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  &__side-menu {
+    width: 19.625rem;
+    min-width: 15rem;
+    height: 100%;
+  }
 
-    &__main {
-        width: 70%;
-        height: 70%;
-    }
+  &__main {
+    width: 70%;
+    height: 70%;
+  }
 }

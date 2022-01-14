@@ -6,12 +6,10 @@ import GamePage from "./pages/GamePage/GamePage";
 function App() {
   return (
     <BrowserRouter>
-      
       <Switch>
         <Route path="/" exact component={TutorialPage} />
-        <Route path="/game" exact component={GamePage} />        
+        <Route path="/game" exact component={GamePage} />
       </Switch>
-      
     </BrowserRouter>
   );
 }
