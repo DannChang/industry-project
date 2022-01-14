@@ -1,6 +1,6 @@
 import "./TutorialPage.scss";
 import TutorialSideMenu from "../../components/TutorialSideMenu/TutorialSideMenu";
-import TutorialEntry from "../../components/TutorialEntry/TutorialEntry";
+import TutorialMain from "../../components/TutorialMain/TutorialMain";
 
 
 export default function TutorialPage(props) {
@@ -20,7 +20,7 @@ export default function TutorialPage(props) {
 
                 </article>
                 <article className="tutorial__main">
-                    <TutorialEntry />
+                    <TutorialMain />
 
                 </article>
               
