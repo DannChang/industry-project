@@ -3,24 +3,62 @@
 //@use "../../styles/partials/typography" as *;
 
 .side-menu {
-    height: 100vh;
-    padding: 1.875rem;
-    background-color: $background-dark;
-    border-radius: 0 20px 20px 0;
-    color: $text-main-color;
+  font-size: "ProductSans";
+  height: 100vh;
+  width: 314px;
+  padding: 1.875rem;
+  background-color: $global-black;
+  border-radius: 0 20px 20px 0;
+  color: $global-white;
 
-    &__welcome-container {
-        @include page-header;
-        font-weight: 300;      
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid $line;
-    }
+  &__welcome-container {
+    @include page-header;
+    font-size: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $global-blue;
+  }
 
-    &__basics-container {
-        @include page-header;
-        font-weight: 300;      
-    }
-    
+  &__basics-container {
+    @include page-header;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 1rem;
+    font-weight: 300;
+  }
+  &__logo {
+    top: 0.5625rem;
+    padding-left: 6.0625rem;
+    width: 7.75rem;
+    height: 5.1875rem;
+  }
+  &__link-basics {
+    display: flex;
+    padding: 0.9063rem 1rem 0.9063rem 0rem;
+    flex-direction: row;
+    align-items: center;
+    color: $global-white;
+  }
+  &__link-onboarding {
+    display: flex;
+    padding: 0rem 1rem 0rem 0rem;
+    flex-direction: row;
+    align-items: center;
+    color: $global-white;
+  }
+  &__onboarding-container {
+    @include page-header;
+    border-top: 2px solid $global-blue;
+  }
+  &__title {
+    font-size: 24px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
+.dots {
+  padding-top: 0.9063rem;
+  padding-bottom: 0.9063rem;
+  padding-left: 12px;
+}
