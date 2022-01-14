@@ -1,6 +1,6 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
-//@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography" as *;
 
 .side-menu {
   font-size: "ProductSans";
@@ -10,11 +10,15 @@
   background-color: $global-black;
   border-radius: 0 20px 20px 0;
   color: $global-white;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
 
   &__welcome-container {
     @include page-header;
     font-size: 24px;
-    padding-top: 1.5rem;
+    padding-top: 0rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid $global-blue;
   }
@@ -23,11 +27,9 @@
     @include page-header;
     font-size: 18px;
     font-weight: 700;
-    padding-top: 1rem;
-    font-weight: 300;
   }
   &__logo {
-    top: 0.5625rem;
+    padding-top: 2rem;
     padding-left: 6.0625rem;
     width: 7.75rem;
     height: 5.1875rem;
@@ -45,25 +47,25 @@
     flex-direction: row;
     align-items: center;
     color: $global-white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   &__onboarding-container {
     @include page-header;
     border-top: 2px solid $global-blue;
+    display: flex;
+    flex-direction: column;
   }
   &__title {
     font-size: 24px;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
 }
 
 .dots {
+  width: 6px;
   padding-top: 0.9063rem;
   padding-bottom: 0.9063rem;
   padding-left: 12px;
-}
-
-.side-menu__link-basics--active {
-  background-image: url("../../assets/images/Icons/dotinradiobutton.svg");
-  background-repeat: no-repeat;
 }
