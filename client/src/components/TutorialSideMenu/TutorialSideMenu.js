@@ -13,22 +13,22 @@ class TutorialSideMenu extends Component {
         <>
           <section className="side-menu">
             <div>
-              <NavLink to="/">
+              <Link to="/">
                 <img className="side-menu__logo" src={Logo} alt="Logo" />
-              </NavLink>
+              </Link>
               <div className="side-menu__welcome-container">
                 <h1 className="side-menu__title">Welcome!</h1>
               </div>
               <div className="side-menu__basics-container">
                 <h1 className="side-menu__title">LEARN THE BASICS</h1>
-                <NavLink className="side-menu__link-basics" to="/">
+                <Link className="side-menu__link-basics" to="/">
                   <img
                     className="side-menu__link-basics"
                     src={Radiobutton}
                     alt="Radiobutton"
                   />
                   <h4>Moving around</h4>
-                </NavLink>
+                </Link>
                 <Link className="side-menu__link-basics" to="/">
                   <img
                     className="side-menu__link-basics"
