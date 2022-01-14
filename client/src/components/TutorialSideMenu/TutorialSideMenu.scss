@@ -1,6 +1,6 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
-//@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography" as *;
 
 .side-menu {
   font-size: "ProductSans";
@@ -10,6 +10,8 @@
   background-color: $global-black;
   border-radius: 0 20px 20px 0;
   color: $global-white;
+  padding-bottom: 0px;
+  padding-top: 0px;
 
   &__welcome-container {
     @include page-header;
@@ -23,8 +25,6 @@
     @include page-header;
     font-size: 18px;
     font-weight: 700;
-    padding-top: 1rem;
-    font-weight: 300;
   }
   &__logo {
     top: 0.5625rem;
@@ -45,19 +45,24 @@
     flex-direction: row;
     align-items: center;
     color: $global-white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   &__onboarding-container {
     @include page-header;
     border-top: 2px solid $global-blue;
+    display: flex;
+    flex-direction: column;
   }
   &__title {
     font-size: 24px;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
 }
 
 .dots {
+  width: 6px;
   padding-top: 0.9063rem;
   padding-bottom: 0.9063rem;
   padding-left: 12px;
