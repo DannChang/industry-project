@@ -1,9 +1,10 @@
 @use "../../styles/partials/colors" as *;
 
-
-
 .modal {
-
+    position: relative;    
+    width: 100%;
+    height: 100%;
+  
     &--starter {
         background-image: url("../../assets/images/bg-1.png");
         background-repeat: no-repeat;
@@ -29,11 +30,6 @@
         background-repeat: no-repeat;
         background-size: calc(100vw - 22rem) 100vh;
     }
-
-    position: relative;
-    background-color: honeydew;
-    width: 100%;
-    height: 100%;
 
     &__card {
         position: absolute;
@@ -72,29 +68,34 @@
     }
     &__lower-text{
 
-    }
+  &__text {
+    margin-bottom: 2rem;
+    color: $global-white;
+  }
+  &__upper-text {
+    margin-bottom: 1.5rem;
+  }
+  &__lower-text {
+  }
 
-    &__footer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    &__left-arrow {
-        margin-right: 1.625rem;
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__left-arrow {
+    margin-right: 1.625rem;
 
-        &--unavailable {
-            
-        }
+    &--unavailable {
     }
-    &__right-arrow {
-        margin-right: 1.625rem;
+  }
+  &__right-arrow {
+    margin-right: 1.625rem;
 
-        &--unavailable {
-            
-        }
+    &--unavailable {
     }
-    &__skip {
-        color: $global-white;
-    }
-
+  }
+  &__skip {
+    color: $global-white;
+  }
 }
