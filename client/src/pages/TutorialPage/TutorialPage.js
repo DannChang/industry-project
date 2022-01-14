@@ -5,13 +5,6 @@ import TutorialMain from "../../components/TutorialMain/TutorialMain";
 
 export default function TutorialPage(props) {
 
-
-
-
-
-
-
-
     return (
         <>
             <section className="tutorial">
@@ -20,7 +13,9 @@ export default function TutorialPage(props) {
 
                 </article>
                 <article className="tutorial__main">
-                    <TutorialMain />
+                    <TutorialMain 
+                        cardInfo={props.cardInfo}
+                    />
 
                 </article>
               

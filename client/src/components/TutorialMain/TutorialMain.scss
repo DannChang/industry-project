@@ -1,0 +1,71 @@
+@use "../../styles/partials/colors" as *;
+
+
+
+.modal {
+    position: relative;
+    background-color: honeydew;
+    width: 100vw;
+    height: 100vh;
+
+    &__card {
+        position: absolute;
+        top: 3.375rem;
+        left: 3.375rem;
+        width: 37.5rem;
+        border: 0.3125rem solid $line;
+        border-radius: 1.25rem;
+        padding: 2rem;
+        background-color: $background-dark;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        color: $text-main-color;
+        margin-bottom: 1.4375rem;
+    }
+    &__avatar {
+        width: 4.9375rem;
+        height: 4.9375rem;
+        margin-right: 1.4375rem;
+    }
+    &__header-text {
+
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+        color: $text-main-color;
+    }
+    &__upper-text {
+        margin-bottom: 1.5rem;
+    }
+    &__lower-text{
+
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__left-arrow {
+        margin-right: 1.625rem;
+
+        &--unavailable {
+            
+        }
+    }
+    &__right-arrow {
+        margin-right: 1.625rem;
+
+        &--unavailable {
+            
+        }
+    }
+    &__skip {
+        color: $text-main-color;
+    }
+
+}
