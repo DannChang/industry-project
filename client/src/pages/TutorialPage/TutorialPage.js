@@ -2,15 +2,7 @@ import "./TutorialPage.scss";
 import TutorialSideMenu from "../../components/TutorialSideMenu/TutorialSideMenu";
 import TutorialMain from "../../components/TutorialMain/TutorialMain";
 
-
 export default function TutorialPage(props) {
-
-
-
-
-
-
-
 
     return (
         <>
@@ -27,7 +19,5 @@ export default function TutorialPage(props) {
         </section>
         </>
       );
-
-
 
 }
