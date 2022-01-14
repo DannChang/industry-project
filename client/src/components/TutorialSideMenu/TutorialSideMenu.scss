@@ -1,0 +1,26 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+//@use "../../styles/partials/typography" as *;
+
+.side-menu {
+    height: 100vh;
+    padding: 1.875rem;
+    background-color: $background-dark;
+    border-radius: 0 20px 20px 0;
+    color: $text-main-color;
+
+    &__welcome-container {
+        @include page-header;
+        font-weight: 300;      
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $line;
+    }
+
+    &__basics-container {
+        @include page-header;
+        font-weight: 300;      
+    }
+    
+}
+

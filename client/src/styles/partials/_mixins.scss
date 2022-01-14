@@ -1,0 +1,147 @@
+/// --- MIXINS SCSS --- ///
+@use "./variables" as *;
+
+// MEDIA QUERIES //
+@use "../partials/variables" as *;
+@use "../partials/colors" as *;
+
+@mixin big-mobile {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+
+@mixin page-header {
+	font-size: 1.25rem;
+	//line-height: 5rem;  
+  letter-spacing: 0.1875rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+// //
+@mixin button {
+  height: 36px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  @include tablet {
+    height: 38px;
+    width: fit-content;
+    padding: 16px;
+  }
+}
+
+@mixin overlay-component {
+  // border: 1px solid black;
+  // margin: 0 1rem;
+  margin: 0 2.5vw 0 5vw;
+  // position: fixed;
+  position: relative;
+  // z-index: 3;
+  top: -3rem;
+  background-color: white;
+  width: 91%;
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+  border-radius: 3px;
+  // @include big-mobile {
+  //   width: 93%;
+  // }
+  @include tablet {
+    margin: 0 2rem;
+    width: 93%;
+  }
+  @include desktop {
+    margin: 0 8rem;
+    width: 85%;
+  }
+}
+// @mixin overlay-component {
+//   border: 1px solid black;
+//   margin: 0 1rem;
+//   position: fixed;
+//   top: 9rem;
+//   background-color: white;
+//   width: 91%;
+
+//   @include big-mobile {
+//     width: 93%;
+//   }
+//   @include tablet {
+//     margin: 0 2rem;
+//     width: 93%;
+//   }
+//   @include desktop {
+//     margin: 0 8rem;
+//     width: 85%;
+//   }
+// }
+
+@mixin search-bar {
+  ::placeholder {
+    color: $global-text;
+  }
+  background: url(../../assets/images/Icons/search-24px.svg);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 96%;
+  color: $global-text;
+  background-color: $global-white;
+  min-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 0.0625rem solid $cloud;
+  border-radius: 20px;
+  font-family: "Titillium Web";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+
+  @include tablet {
+    margin-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    background-size: 22px;
+    height: 2.375rem;
+    min-width: 11.5625rem;
+    margin-right: 1rem;
+  }
+  @include desktop {
+    min-width: 17.125rem;
+  }
+}
+
+input {
+  outline: none;
+  &:focus:invalid {
+    border: 0.0625rem 0.125rem #2e66e5 solid;
+  }
+  &:focus:valid {
+    border: 0.125rem #2e66e5 solid;
+  }
+}
+ */
