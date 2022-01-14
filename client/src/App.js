@@ -80,7 +80,6 @@ const objectInfo8 = {
 
   return (
     <BrowserRouter>
-      
       <Switch>
       
         <Route exact path="/" render={() => (<Redirect to="/tutorial/starter" />)} />
@@ -156,19 +155,9 @@ const objectInfo8 = {
             )
           }}
         />
-
-
-
-
-
-
-
         
-
-        
-        <Route path="/game" exact component={GamePage} />        
+        {/* <Route path="/game" exact component={GamePage} /> */}        
       </Switch>
-      
     </BrowserRouter>
   );
 }

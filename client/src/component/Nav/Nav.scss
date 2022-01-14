@@ -1,0 +1,91 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  font-family: "ProductSans";
+  font-weight: 600;
+  padding: 0rem 1rem;
+  background-color: $global-black;
+  max-width: 314px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0px;
+  @include tablet {
+    padding: 0rem 2rem;
+  }
+  @include desktop {
+    padding: 0rem 8rem;
+  }
+  &__container {
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    @include tablet {
+      padding-top: 2rem;
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__nav {
+    padding-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    @include tablet {
+      width: 15rem;
+      padding-right: 2%;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-text;
+    text-decoration: none;
+    width: 45%;
+    height: 36px;
+    @include tablet {
+      width: 10.25rem;
+    }
+    &-left {
+      margin-right: 1rem;
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+
+    &--active {
+      color: $global-white;
+      background-color: $global-text;
+      width: 45%;
+      height: 2.25rem;
+      border-radius: 20px;
+      text-decoration: none;
+      @include tablet {
+        width: 10.25rem;
+      }
+    }
+
+    &:hover {
+      color: $global-white;
+      width: 45%;
+      height: 2.25rem;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: underline;
+      @include tablet {
+        width: 10.25rem;
+      }
+    }
+  }
+}

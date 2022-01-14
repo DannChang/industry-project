@@ -13,16 +13,16 @@
         top: 3.375rem;
         left: 3.375rem;
         width: 37.5rem;
-        border: 0.3125rem solid $line;
+        border: 0.3125rem solid $global-blue;
         border-radius: 1.25rem;
         padding: 2rem;
-        background-color: $background-dark;
+        background-color: $global-black;
     }
 
     &__header {
         display: flex;
         align-items: center;
-        color: $text-main-color;
+        color: $global-white;
         margin-bottom: 1.4375rem;
     }
     &__avatar {
@@ -36,7 +36,7 @@
 
     &__text {
         margin-bottom: 2rem;
-        color: $text-main-color;
+        color: $global-white;
     }
     &__upper-text {
         margin-bottom: 1.5rem;
@@ -65,7 +65,7 @@
         }
     }
     &__skip {
-        color: $text-main-color;
+        color: $global-white;
     }
 
 }
