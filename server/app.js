@@ -66,14 +66,6 @@ function setup() {
   explorer.vy = 0;
   gameScene.addChild(explorer);
 
-  // Cat
-  cat = new Sprite(resources["cat.png"]);
-  cat.x = 200;
-  cat.y = gameScene.height / 2 - explorer.height / 2;
-  cat.vx = 0;
-  cat.vy = 0;
-  gameScene.addChild(cat);
-
   //Create the `gameOver` scene
   gameOverScene = new Container();
   app.stage.addChild(gameOverScene);
@@ -172,32 +164,6 @@ function play(delta) {
 
   //Set `explorerHit` to `false` before checking for a collision
   let explorerHit = false;
-
-  //If the explorer is hit...
-  if (explorerHit) {
-    //Make the explorer semi-transparent
-    explorer.alpha = 0.5;
-
-    //Reduce the width of the health bar's inner rectangle by 1 pixel
-    healthBar.outer.width -= 1;
-  } else {
-    //Make the explorer fully opaque (non-transparent) if it hasn't been hit
-    explorer.alpha = 1;
-  }
-
-  //   //Check for a collision between the explorer and the treasure
-  //   if (hitTestRectangle(explorer, treasure)) {
-  //     //If the treasure is touching the explorer, center it over the explorer
-  //     treasure.x = explorer.x + 8;
-  //     treasure.y = explorer.y + 8;
-  //   }
-
-  //   //If the explorer has brought the treasure to the exit,
-  //   //end the game and display "You won!"
-  //   if (hitTestRectangle(treasure, door)) {
-  //     state = end;
-  //     message.text = "You won!";
-  //   }
 }
 
 function end() {
