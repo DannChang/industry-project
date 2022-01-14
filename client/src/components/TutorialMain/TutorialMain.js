@@ -7,9 +7,9 @@ import arrowLeftUnable from "../../assets/icons/arrow-left-unable.svg";
 import arrowRightUnable from "../../assets/icons/arrow-right-unable.svg";
 
 export default function TutorialMain(props) {
-
+console.log(props);
     const { headerText, upperText, lowerText, prevLink, nextLink } = props.cardInfo;
-    console.log(props);
+
     return (
         <>
             {props.cardInfo && (
