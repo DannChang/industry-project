@@ -1,0 +1,167 @@
+//@use "./variables" as *;
+/// --- TYPOGRAPHY.SCSS --- ///
+//@use "./mixins" as *;
+// FONTS //
+/* @font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Thin.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-ThinItalic.ttf") format("truetype");
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+} */
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-LightItalic.ttf") format("truetype");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+} 
+
+/* @font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+} */
+
+/* @font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Medium.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-MediumItalic.ttf") format("truetype");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ProductSans";
+	src: url("../../assets/fonts/ProductSans-BlackItalic.ttf") format("truetype");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+} */
+
+
+
+// TYPOGRAPHY STYLING //
+/* 
+@mixin page-header {
+	font-size: 28px;
+	line-height: 36px;
+	@include tablet {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
+
+@mixin subheader {
+	font-size: 20px;
+	line-height: 28px;
+	@include tablet {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+@mixin label-link-button-copy {
+	font-size: 13px;
+	line-height: 20px;
+	@include tablet {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@mixin table-header {
+	font-size: 11px;
+	line-height: 16px;
+	@include tablet {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+@mixin body-copy-large {
+	font-size: 15px;
+	line-height: 26px;
+	@include tablet {
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+
+@mixin body-copy-medium {
+	font-size: 13px;
+	line-height: 20px;
+	@include tablet {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@mixin body-copy-small {
+	font-size: 11px;
+	line-height: 16px;
+	@include tablet {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+ */
