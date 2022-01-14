@@ -88,6 +88,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo1}
+              page={"--starter"}
               />
             )
           }}
@@ -97,6 +98,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo2}
+              page={"--moving-around"}
               />
             )
           }}
@@ -106,6 +108,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo3}
+              page={"--interact-with-others"}
               />
             )
           }}
@@ -115,6 +118,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo4}
+              page={"--play-mini-games"}
               />
             )
           }}
@@ -124,6 +128,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo5}
+              page={"--workplace-culture"}
               />
             )
           }}
@@ -133,6 +138,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo6}
+              page={""}              
               />
             )
           }}
@@ -142,6 +148,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo7}
+              page={""}
               />
             )
           }}
@@ -151,6 +158,7 @@ const objectInfo8 = {
             return (
               <TutorialPage                              
               cardInfo={objectInfo8}
+              page={""}
               />
             )
           }}

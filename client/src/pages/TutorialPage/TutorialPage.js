@@ -14,6 +14,7 @@ export default function TutorialPage(props) {
                 <article className="tutorial__main">
                     <TutorialMain 
                         cardInfo={props.cardInfo}
+                        page={props.page}
                     />
 
                 </article>

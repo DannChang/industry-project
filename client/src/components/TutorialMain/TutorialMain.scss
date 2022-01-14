@@ -3,10 +3,37 @@
 
 
 .modal {
+
+    &--starter {
+        background-image: url("../../assets/images/bg-1.png");
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 22rem) 100vh;
+    }
+    &--moving-around {
+        background-image: url("../../assets/images/bg-2.png");
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 22rem) 100vh;
+    }
+    &--interact-with-others {
+        background-image: url("../../assets/images/bg-3.png");
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 22rem) 100vh;
+    }
+    &--play-mini-games {
+        background-image: url("../../assets/images/bg-4.png");
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 22rem) 100vh;
+    }
+    &--workplace-culture {
+        background-image: url("../../assets/images/bg-5.png");
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 22rem) 100vh;
+    }
+
     position: relative;
     background-color: honeydew;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     &__card {
         position: absolute;

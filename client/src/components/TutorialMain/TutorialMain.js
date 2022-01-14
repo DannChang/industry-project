@@ -9,11 +9,21 @@ import arrowRightUnable from "../../assets/icons/arrow-right-unable.svg";
 export default function TutorialMain(props) {
 
     const { headerText, upperText, lowerText, prevLink, nextLink } = props.cardInfo;
-
+    console.log(props);
     return (
         <>
             {props.cardInfo && (
-                <section className="modal">
+
+
+                  
+
+                    <section className={"modal modal" + props.page}>
+
+             
+                    
+
+
+
                     <article className="modal__card">
                         <section className="modal__header">
                             <img className="modal__avatar" src={avatarIcon} alt="Avatar"/>
@@ -60,6 +70,7 @@ export default function TutorialMain(props) {
                         </section>
                     </article>
                 </section>
+                
             )}
         </>
         );
