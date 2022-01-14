@@ -1,71 +1,64 @@
 @use "../../styles/partials/colors" as *;
 
-
-
 .modal {
-    position: relative;
-    background-color: honeydew;
-    width: 100vw;
-    height: 100vh;
+  position: relative;
+  background-color: honeydew;
+  width: 100vw;
+  min-height: 100%;
 
-    &__card {
-        position: absolute;
-        top: 3.375rem;
-        left: 3.375rem;
-        width: 37.5rem;
-        border: 0.3125rem solid $global-blue;
-        border-radius: 1.25rem;
-        padding: 2rem;
-        background-color: $global-black;
-    }
+  &__card {
+    position: absolute;
+    top: 3.375rem;
+    left: 3.375rem;
+    width: 37.5rem;
+    border: 0.3125rem solid $global-blue;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    background-color: $global-black;
+  }
 
-    &__header {
-        display: flex;
-        align-items: center;
-        color: $global-white;
-        margin-bottom: 1.4375rem;
-    }
-    &__avatar {
-        width: 4.9375rem;
-        height: 4.9375rem;
-        margin-right: 1.4375rem;
-    }
-    &__header-text {
+  &__header {
+    display: flex;
+    align-items: center;
+    color: $global-white;
+    margin-bottom: 1.4375rem;
+  }
+  &__avatar {
+    width: 4.9375rem;
+    height: 4.9375rem;
+    margin-right: 1.4375rem;
+  }
+  &__header-text {
+  }
 
-    }
+  &__text {
+    margin-bottom: 2rem;
+    color: $global-white;
+  }
+  &__upper-text {
+    margin-bottom: 1.5rem;
+  }
+  &__lower-text {
+  }
 
-    &__text {
-        margin-bottom: 2rem;
-        color: $global-white;
-    }
-    &__upper-text {
-        margin-bottom: 1.5rem;
-    }
-    &__lower-text{
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__left-arrow {
+    margin-right: 1.625rem;
 
+    &--unavailable {
     }
+  }
+  &__right-arrow {
+    margin-right: 1.625rem;
 
-    &__footer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    &--unavailable {
     }
-    &__left-arrow {
-        margin-right: 1.625rem;
-
-        &--unavailable {
-            
-        }
-    }
-    &__right-arrow {
-        margin-right: 1.625rem;
-
-        &--unavailable {
-            
-        }
-    }
-    &__skip {
-        color: $global-white;
-    }
-
+  }
+  &__skip {
+    color: $global-white;
+  }
 }
